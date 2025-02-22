@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://coo7tgpjhit3g"]
+
+[ext_resource type="Texture2D" uid="uid://chvqatiep18nm" path="res://Textures/Enemy/giant_amoeba_new.png" id="1_evn6r"]
+[ext_resource type="Script" path="res://slime/enemy.gd" id="1_gplg1"]
+
+[node name="enemy_slime" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_gplg1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 3)
+texture = ExtResource("1_evn6r")

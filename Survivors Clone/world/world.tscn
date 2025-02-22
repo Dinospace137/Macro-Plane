@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0twphrftvewm"]
+
+[ext_resource type="Texture2D" uid="uid://cfubjvwfkm15e" path="res://ooook/zelda_like_grass Copy.png" id="1_ka554"]
+[ext_resource type="PackedScene" uid="uid://dqdoiyic6ddv8" path="res://Player/character_body_2d.tscn" id="2_l8540"]
+[ext_resource type="PackedScene" uid="uid://coo7tgpjhit3g" path="res://slime/enemy.tscn" id="3_ty8mk"]
+
+[node name="world" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+texture = ExtResource("1_ka554")
+region_enabled = true
+region_rect = Rect2(0, 0, 4000, 4000)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_l8540")]
+
+[node name="enemy_slime" parent="." instance=ExtResource("3_ty8mk")]
+position = Vector2(125, -37)
